@@ -16,7 +16,7 @@
     </div>
 
     <!--nav menu-->
-    <nav class="flex space-x-6">
+    <nav class="hidden md:flex space-x-6">
       <a href="" class="hover:bg-slate-500 hover:text-blue-200 px-4 py-4 rounded transition duration-500">Home</a>
       <a href="" class="hover:bg-slate-500 hover:text-blue-200 px-4 py-4 rounded transition duration-500">About</a>
       <a href="" class="hover:bg-slate-500 hover:text-blue-200 px-4 py-4 rounded transition duration-500">Product</a>
@@ -24,11 +24,30 @@
     </nav>
 
   <!--ham menu-->
-    <button class="lg:hidden">
-      hamberger
+    <button class="lg:hidden text-white" id="hamberger">
+      &#9776;
     </button>
+
     </div>
  </header>
+
+ <div id="hamberger-menu" class="md-hidden bg-blue-600 text-white py-4 hidden">
+    <nav class="flex flex-col space-y-4 px-6">
+      <a href="" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">Home</a>
+      <a href="" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">About</a>
+      <a href="" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">Product</a>
+      <a href="" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">Contact</a>
+    </nav>
+ </div>
+
+ <script>
+  const hambergerButton = document.getElementById('hamberger');
+  const hambergerMenu = document.getElementById('hamberger-menu');
+
+  hambergerButton.addEventListener('click',() => {
+    hambergerMenu.classList.toggle('hidden')
+  })
+</script>
 
  <!--carousel-->
  <section class="container mx-auto px-5 my-8">
