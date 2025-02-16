@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/output.css" >
+  <title>IT sk</title>
+</head>
+<body class="bg-white text-black-900">
+
+  <!--nav bar-->
+ <header class="bg-blue-950 text-white py-3">
+    <div class="container mx-auto px-2 flex items-center justify-between">
+    <div>
+        <h1 class="text-4x1 font-bold">info nc 101</h1>
+    </div>
+
+    <!--nav menu-->
+    <nav class="hidden md:flex space-x-6">
+      <a href="Home.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">หน้าแรก</a>     
+      <a href="Schoolad.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลผู้บริหาร</a>
+      <a href="pepo.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลบุคลากร</a>
+      <a href="job.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลสาขาวิชาที่เปิดสอน</a>
+      <a href="student.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลนักเรียน</a>
+    </nav>
+
+  <!--ham menu-->
+    <button class="lg:hidden text-white" id="hamberger">
+      &#9776;
+    </button>
+
+    </div>
+ </header>
+
+ <div id="hamberger-menu" class="md-hidden bg-blue-400 text-white py-4 hidden">
+  <nav class="flex flex-col space-y-4 px-6">
+    <a href="Home.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">หน้าแรก</a>     
+    <a href="Schoolad.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลผู้บริหาร</a>
+    <a href="pepo.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลบุคลากร</a>
+    <a href="job.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลสาขาวิชาที่เปิดสอน</a>
+    <a href="student.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลนักเรียน</a>
+  </nav>
+</div>
+
+ <script>
+  const hambergerButton = document.getElementById('hamberger');
+  const hambergerMenu = document.getElementById('hamberger-menu');
+
+  hambergerButton.addEventListener('click',() => {
+    hambergerMenu.classList.toggle('hidden')
+  })
+</script>
+
+<section class="container mx-auto px-6 my-8">
+  <h1 class="text-xl font-bold mb-2">ดูข้อมูลผู้บริหาร</h1>
+  <center>
+  <div class="max-w-sm bg-white p-5 rounded-lg shadow-lg">
+      <img src="img/bigad.jpg" alt="" class="w-70 h-80 object-cover rounded-1g mb-4"> 
+    </a>
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">นายวุฒิชัย รักชาติ</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">ผู้อำนวยการ</p>
+    
+
+            </svg>
+        </a>
+    </div>
+  </div>
+  
+        </center> 
+  <center>
+    <br><br>
+    <div class="grid grid-cols-1 smigrid-cols-2 lg:grid-cols-2 mp-10 gap-20">
+      <div class="bg-white p-5 rounded-lg shadow-lg"> 
+          <img src="img/ad2.jpg" alt="" class="w-70 h-80 object-cover rounded-1g mb-4"> 
+          <h3 class="text-xl font-semibold">นายชิษณุพงศ์ ศรีวิบูลย์กุล</h3>
+          <p class="text-normal">รองผู้อำนวยการฝ่ายพัฒนากิจการนักเรียนนักศึกษา</p>
+        </div>
+      <div class="bg-white p-5 rounded-lg shadow-lg">
+          <img src="img/ad1.jpg" alt="" class="w-70 h-80  object-cover rounded-1g mb-4"> 
+        <h3 class="text-xl font-semibold">นายสิริพรชัย ศักดาประเสริฐ</h3> 
+        <p class="text-normal">รองผู้อำนวยการฝ่ายวิชาการ</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-lg"> 
+          <img src="img/ad4.jpg" alt="" class="w-70 h-80 object-cover rounded-1g mb-4"> 
+          <h3 class="text-xl font-semibold">นายเทอดศักดิ์ แก้วคงคา</h3>
+          <p class="text-normal">รองผู้อำนวยการฝ่ายแผนงานและความร่วมมือ</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-lg"> 
+          <img src="img/ad5.jpg" alt="" class="w-70 h-80 object-cover rounded-1g mb-4"> 
+          <h3 class="text-xl font-semibold">นางชาพิมญช์ ลำไธสง</h3>
+          <p class="text-normal">รองผู้อำนวยการฝ่ายบริหารทรัพยากร</p>
+        </div>
+
+        </div>
+        </center>
+        </section>
+        <center>
+      
+
+
+    
+      
+        
+  <!--footer-->
+  <footer class="bg-blue-950 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 info nc 101 All right reserved.</p>
+      <p class="mt-2">Follow us on social media for lastest update!</p>
+    </div>
+  </footer>
+</body>
+</html>

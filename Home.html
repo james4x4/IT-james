@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/output.css" >
+  <title>IT sk</title>
+</head>
+<body class="bg-white text-black-900">
+
+  <!--nav bar-->
+ <header class="bg-blue-950 text-white py-3">
+    <div class="container mx-auto px-2 flex items-center justify-between">
+    <div>
+        <h1 class="text-4x1 font-bold">info nc 101<h1>
+    </div>
+
+    <!--nav menu-->
+    <nav class="hidden md:flex space-x-6">
+      <a href="Home.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">หน้าแรก</a>     
+      <a href="Schoolad.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลผู้บริหาร</a>
+      <a href="pepo.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลบุคลากร</a>
+      <a href="job.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลสาขาวิชาที่เปิดสอน</a>
+      <a href="student.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลนักเรียน</a>
+    </nav>
+
+  <!--ham menu-->
+    <button class="lg:hidden text-white" id="hamberger">
+      &#9776;
+    </button>
+
+    </div>
+ </header>
+
+ <div id="hamberger-menu" class="md-hidden bg-blue-500 text-white py-5 hidden">
+    <nav class="flex flex-col space-y-4 px-6">
+      <a href="Home.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">หน้าแรก</a>     
+      <a href="Schoolad.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลผู้บริหาร</a>
+      <a href="pepo.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลบุคลากร</a>
+      <a href="job.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลสาขาวิชาที่เปิดสอน</a>
+      <a href="student.html" class="hover:bg-slate-500 hover:text-blue-200 px-4 rounded transition duration-500">ข้อมูลนักเรียน</a>
+    </nav>
+ </div>
+
+ <script>
+  const hambergerButton = document.getElementById('hamberger');
+  const hambergerMenu = document.getElementById('hamberger-menu');
+
+  hambergerButton.addEventListener('click',() => {
+    hambergerMenu.classList.toggle('hidden')
+  })
+</script>
+
+
+<!--card-->
+<section class="container mx-auto px-6 my-8">
+  <h1 class="text-xl font-bold mb-2">ดูข้อมูล</h1>
+  <center>
+    <br><br>
+    <div class="grid grid-cols-1 smigrid-cols-2 lg:grid-cols-2 mp-10 gap-20">
+      <div class="bg-white p-5 rounded-lg shadow-lg">
+        <h3 class="text-xl font-semibold">ข้อมูลผู้บริหาร</h3> 
+        <a href="Schoolad.html" class="">
+          <img src="img/bigad.jpg" alt="" class="w-70 h-80 object-cover rounded-1g mb-4"> 
+        </a> 
+
+        </div>
+      <div class="bg-white p-5 rounded-lg shadow-lg">
+       <h3 class="text-xl font-semibold">ข้อมูลบุคลากร</h3> 
+        <a href="pepo.html" class="">
+          <img src="img/tea.jpg" alt="" class="w-70 h-80  object-cover rounded-1g mb-4"> 
+        </a>
+
+        </div>
+      </center>
+ <br> <br>
+  </section>
+  <center>
+<section class="container mx-auto px-10 my-12">
+  <div class="grid grid-cols-1 smigrid-cols-2 lg:grid-cols-2 mp-10 gap-20">
+    <div class="bg-white p-5 rounded-lg shadow-lg">
+  <a href="job.html" class="block max-w-sm p-6 bg-white rounded-lg  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">ข้อมูลสาขาวิชาที่เปิดสอน</h5><br>
+    <p class="font-normal text-gray-700 dark:text-gray-400">ปวช. ปวส. ปริญญาตรี</p>
+</a>
+</div>
+<div>
+  <div class="bg-white p-5 rounded-lg shadow-lg">
+    <a href="student.html" class="block max-w-sm p-6 bg-white rounded-lg  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"><br>
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">ข้อมูลนักเรียน</h5><br>
+  
+  </a>
+</div>
+
+</section>
+
+
+  <!--footer-->
+  <br>  <br>  <br>  
+  <footer class="bg-blue-950 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 info nc 101 All right reserved.</p>
+      <p class="mt-2">Follow us on social media for lastest update!</p>
+    </div>
+  </footer>
+</body>
+</html>
